@@ -44,6 +44,20 @@ and run ```java -jar Astra.jar```
 * Arguments in square brackets are optional
     * e.g. `/by <date> [time]` can be used as `/by 2025-12-03 14:00` or just `/by 2025-12-03`
 
+* Auto clearing of task files and Reminder of Tasks due soon upon starting ASTRA
+  * Astra will print out 2 list, the first is a list of tasks with deadlines past the current day(that has been automatically deleted) while the second is a list of tasks which are due within the next 3 days to remind the user to complete them soon.
+  ```  
+    These tasks are overdue and have been removed from the list
+    ------------------------------------------------------------
+    No overdue tasks have been deleted!
+    ------------------------------------------------------------
+    
+    
+    These tasks are due soon. Reminder to complete them!
+    ------------------------------------------------------------
+    No task due for the next 3 days
+    ------------------------------------------------------------
+  ```
 ### Getting Help
 Ask Astra to List all the available commands the user can use as well as the input format
 which is required for each command
